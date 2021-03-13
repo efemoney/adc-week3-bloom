@@ -57,6 +57,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.MyTheme
@@ -156,7 +157,8 @@ fun GardenPlant(name: String, image: String, selected: Boolean) {
       contentDescription = name,
       modifier = Modifier
         .size(64.dp)
-        .clip(MaterialTheme.shapes.small)
+        .clip(MaterialTheme.shapes.small),
+      contentScale = ContentScale.Crop,
     )
 
     Spacer(Modifier.width(16.dp))
@@ -214,7 +216,8 @@ private fun Themes() {
           GlideImage(
             data = image,
             contentDescription = "label",
-            modifier = Modifier.weight(1f)
+            modifier = Modifier.weight(1f),
+            contentScale = ContentScale.Crop,
           )
 
           Text(
@@ -235,20 +238,20 @@ private fun Themes() {
 }
 
 private val ThemeItems = listOf(
-  "Desert chic" to "https://www.pexels.com/photo/assorted-color-flowers-2132227/",
-  "Tiny terrariums" to "https://www.pexels.com/photo/clear-glass-terrarium-jar-with-mossy-plants-1400375/",
-  "Jungle vibes" to "https://www.pexels.com/photo/big-green-leaves-of-monstera-5699665/",
-  "Easy care" to "https://www.pexels.com/photo/green-plant-with-long-leaves-in-pot-at-home-6208086/",
-  "Statements" to "https://www.pexels.com/photo/green-leaf-plant-indoors-3511755/",
+  "Desert chic" to "https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2132227.jpg&fm=jpg",
+  "Tiny terrariums" to "https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?cs=srgb&dl=pexels-katarzyna-modrzejewska-1400375.jpg&fm=jpg",
+  "Jungle vibes" to "https://images.pexels.com/photos/5699665/pexels-photo-5699665.jpeg?cs=srgb&dl=pexels-volkan-vardar-5699665.jpg&fm=jpg/",
+  "Easy care" to "https://images.pexels.com/photos/6208086/pexels-photo-6208086.jpeg?cs=srgb&dl=pexels-%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%B3%D0%BB%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2-6208086.jpg&fm=jpg",
+  "Statements" to "https://images.pexels.com/photos/3511755/pexels-photo-3511755.jpeg?cs=srgb&dl=pexels-sidnei-maia-3511755.jpg&fm=jpg/",
 )
 
 private val GardenItems = listOf(
-  "Monstera" to "https://www.pexels.com/photo/green-swiss-cheese-plant-3097770/",
-  "Aglaonema" to "https://www.pexels.com/photo/green-leaf-plant-on-white-stones-4751978/",
-  "Peace lily" to "https://www.pexels.com/photo/delicate-spathiphyllum-cochlearispathum-flowers-with-fresh-green-leaves-in-garden-4425201/",
-  "Fiddle leaf" to "https://www.pexels.com/photo/ficus-lyrata-with-lush-green-leaves-in-house-6208087/",
-  "Snake plant" to "https://www.pexels.com/photo/photo-of-green-snake-house-plant-2123482/",
-  "Pothos" to "https://www.pexels.com/photo/green-leaf-plant-1084199/",
+  "Monstera" to "https://images.pexels.com/photos/3097770/pexels-photo-3097770.jpeg?cs=srgb&dl=pexels-huy-phan-3097770.jpg&fm=jpg/",
+  "Aglaonema" to "https://images.pexels.com/photos/4751978/pexels-photo-4751978.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4751978.jpg&fm=jpg/",
+  "Peace lily" to "https://images.pexels.com/photos/4425201/pexels-photo-4425201.jpeg?cs=srgb&dl=pexels-melvin-vito-4425201.jpg&fm=jpg/",
+  "Fiddle leaf" to "https://images.pexels.com/photos/6208087/pexels-photo-6208087.jpeg?cs=srgb&dl=pexels-%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%B3%D0%BB%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2-6208087.jpg&fm=jpg/",
+  "Snake plant" to "https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?cs=srgb&dl=pexels-fabian-stroobants-2123482.jpg&fm=jpg/",
+  "Pothos" to "https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg?cs=srgb&dl=pexels-faraz-ahmad-1084199.jpg&fm=jpg/",
 )
 
 @Composable
