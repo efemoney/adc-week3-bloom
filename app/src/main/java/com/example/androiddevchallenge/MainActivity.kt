@@ -16,12 +16,10 @@
 package com.example.androiddevchallenge
 
 import android.os.Bundle
-import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.core.view.ViewCompat
 import androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener
 import androidx.core.view.WindowCompat.setDecorFitsSystemWindows
 import androidx.core.view.WindowInsetsCompat

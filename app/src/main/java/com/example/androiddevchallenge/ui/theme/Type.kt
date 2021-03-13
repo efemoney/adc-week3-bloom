@@ -24,47 +24,47 @@ import androidx.compose.ui.unit.sp
 import com.example.androiddevchallenge.R
 
 val NunitoSans = FontFamily(
-    Font(R.font.nunitosans_semibold, FontWeight.SemiBold),
-    Font(R.font.nunitosans_bold, FontWeight.Bold),
-    Font(R.font.nunitosans_light, FontWeight.Light),
+  Font(R.font.nunitosans_semibold, FontWeight.SemiBold),
+  Font(R.font.nunitosans_bold, FontWeight.Bold),
+  Font(R.font.nunitosans_light, FontWeight.Light),
 )
 
 // Set of Material typography styles to start with
 val typography = Typography(
-    defaultFontFamily = NunitoSans,
-    h1 = TextStyle(
-        fontSize = 18.sp,
-        fontWeight = FontWeight.Bold,
-        letterSpacing = 0.sp,
-    ),
-    h2 = TextStyle(
-        fontSize = 14.sp,
-        fontWeight = FontWeight.Bold,
-        letterSpacing = 0.15.sp,
-    ),
-    subtitle1 = TextStyle(
-        fontSize = 16.sp,
-        fontWeight = FontWeight.Light,
-        letterSpacing = 0.sp,
-    ),
-    body1 = TextStyle(
-        fontSize = 14.sp,
-        fontWeight = FontWeight.Light,
-        letterSpacing = 0.sp,
-    ),
-    body2 = TextStyle(
-        fontSize = 12.sp,
-        fontWeight = FontWeight.Light,
-        letterSpacing = 0.sp,
-    ),
-    button = TextStyle(
-        fontSize = 14.sp,
-        fontWeight = FontWeight.SemiBold,
-        letterSpacing = 1.sp,
-    ),
-    caption = TextStyle(
-        fontSize = 12.sp,
-        fontWeight = FontWeight.SemiBold,
-        letterSpacing = 0.sp,
-    ),
+  defaultFontFamily = NunitoSans,
+  h1 = TextStyle(
+    fontSize = 18.sp,
+    fontWeight = FontWeight.Bold,
+    letterSpacing = 0.sp,
+  ),
+  h2 = TextStyle(
+    fontSize = 14.sp,
+    fontWeight = FontWeight.Bold,
+    letterSpacing = 0.15.sp,
+  ),
+  subtitle1 = TextStyle(
+    fontSize = 16.sp,
+    fontWeight = FontWeight.Light,
+    letterSpacing = 0.sp,
+  ),
+  body1 = TextStyle(
+    fontSize = 14.sp,
+    fontWeight = FontWeight.Light,
+    letterSpacing = 0.sp,
+  ),
+  body2 = TextStyle(
+    fontSize = 12.sp,
+    fontWeight = FontWeight.Light,
+    letterSpacing = 0.sp,
+  ),
+  button = TextStyle(
+    fontSize = 14.sp,
+    fontWeight = FontWeight.SemiBold,
+    letterSpacing = 1.sp,
+  ),
+  caption = TextStyle(
+    fontSize = 12.sp,
+    fontWeight = FontWeight.SemiBold,
+    letterSpacing = 0.sp,
+  ),
 )
