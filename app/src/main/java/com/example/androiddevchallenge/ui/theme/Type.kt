@@ -16,28 +16,56 @@
 package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
+import androidx.compose.ui.res.fontResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+val NunitoSans = FontFamily(
+    Font(R.font.nunitosans_semibold, FontWeight.SemiBold),
+    Font(R.font.nunitosans_bold, FontWeight.Bold),
+    Font(R.font.nunitosans_light, FontWeight.Light),
+)
 
 // Set of Material typography styles to start with
 val typography = Typography(
+    defaultFontFamily = NunitoSans,
+    h1 = TextStyle(
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 0.sp,
+    ),
+    h2 = TextStyle(
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 0.15.sp,
+    ),
+    subtitle1 = TextStyle(
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Light,
+        letterSpacing = 0.sp,
+    ),
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Light,
+        letterSpacing = 0.sp,
+    ),
+    body2 = TextStyle(
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Light,
+        letterSpacing = 0.sp,
+    ),
     button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+        fontSize = 14.sp,
+        fontWeight = FontWeight.SemiBold,
+        letterSpacing = 1.sp,
     ),
     caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
-    )
-    */
+        fontSize = 12.sp,
+        fontWeight = FontWeight.SemiBold,
+        letterSpacing = 0.sp,
+    ),
 )
